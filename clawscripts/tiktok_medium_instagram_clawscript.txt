@@ -1,0 +1,440 @@
+// Add this at the beginning of your script
+var commonWomensNames = [
+    "Emma", "Olivia", "Ava", "Isabella", "Sophia", "Charlotte", "Mia", "Amelia",
+    "Harper", "Evelyn", "Abigail", "Emily", "Elizabeth", "Mila", "Ella", "Avery",
+    "Sofia", "Camila", "Aria", "Scarlett", "Victoria", "Madison", "Luna", "Grace",
+    "Chloe", "Penelope", "Layla", "Riley", "Zoey", "Nora", "Lily", "Eleanor",
+    "Hannah", "Lillian", "Addison", "Aubrey", "Ellie", "Stella", "Natalie", "Zoe",
+    "Leah", "Hazel", "Violet", "Aurora", "Savannah", "Audrey", "Brooklyn", "Bella",
+    "Claire", "Skylar", "Lucy", "Paisley", "Everly", "Anna", "Caroline", "Nova",
+    "Genesis", "Emilia", "Kennedy", "Samantha", "Maya", "Willow", "Kinsley", "Naomi"
+];
+
+function generateRandomLetters(length) {
+    var chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+    var result = "";
+    for (var i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+}
+
+function generateRandomEmail() {
+    var randomName = commonWomensNames[Math.floor(Math.random() * commonWomensNames.length)];
+    var randomSuffix = generateRandomLetters(Math.floor(Math.random() * 4) + 3); // 3-6 random chars
+    return randomName.toLowerCase() + randomSuffix + "@mg.salesbase.ai";
+}
+
+// 1) Handle YouTube first
+var startMsg = "Starting to process YouTube accounts";
+logInfo("MainActivity", startMsg);
+speakText(startMsg);
+var server = ""
+
+delay(40000);
+delay(40000);
+var tiktokMsg = "Starting account loop for TikTok + others";
+logWarning("MainActivity", tiktokMsg);
+speakText(tiktokMsg);
+
+clickNodesByContentDescription("Got it");
+delay(5000);
+
+// 3) Handle TikTok + Medium + Instagram + Reddit from index=2..8
+for (var i = 1; i <= 8; i++) {
+
+    
+    
+    var tiktokIterMsg = "Processing TikTok/social iteration " + i;
+    speakText(tiktokIterMsg);
+    
+    launchTikTok();
+//    checkAndRecoverFromStuckScreens();
+    
+    
+    
+    doOpenAccountListSequence();
+    delay(5000);
+    var buttonNode = findNodeByClassNameAndIndex("android.widget.Button", i);
+    if (buttonNode != null) {
+        performNodeClick(buttonNode);
+        var clickMsg = "Clicked node " + i;
+        logWarning("MainActivity", clickMsg);
+        speakText(clickMsg);
+    }
+    delay(5000);
+    var profile = "";
+    if (buttonNode != null) {
+        var contDesc = "";
+        if (buttonNode.contentDescription != null) {
+            contDesc = buttonNode.contentDescription.toString();
+        }
+	launchTikTok();
+        
+        var contDescMsg = "contentDescription = " + contDesc;
+        logWarning("MainActivity", contDescMsg);
+        speakText(contDescMsg);
+        
+	if(contDesc == "Add account"){
+        speakText("add account mode");
+if(isTextPresentOnScreen("Welcome back")){
+
+    delay(5000);
+check2FA();
+    delay(5000);
+}else{
+
+    delay(5000);
+    delay(5000);
+    delay(5000);
+
+
+                clickNodesByContentDescription("Use phone or email");
+                clickNodesByContentDescription("Continue with Email");
+    delay(5000);
+    delay(5000);
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+    delay(5000);
+    delay(5000);
+                clickNodesByContentDescription("Continue");
+    delay(5000);
+    delay(5000);
+                clickNodesByContentDescription("Email");
+    delay(5000);
+    delay(5000);
+    
+    // Generate random email instead of using hardcoded one
+    var randomEmail = generateRandomEmail();
+    var emailMsg = "Generated random email: " + randomEmail;
+    logInfo("MainActivity", emailMsg);
+    speakText("Using random email: " + randomEmail.split("@")[0]);
+    
+    simulateTypeInSecondEditableField(randomEmail);
+    delay(5000);
+    delay(5000);
+    delay(5000);
+    delay(5000);
+                pressEnterKey();
+    delay(5000);
+    delay(5000);
+//                clickNodesByContentDescription("Continue");
+    delay(5000);
+    delay(5000);
+simulateTypeInFirstEditableField("makeugc871door!")
+    delay(5000);
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+simulateScrollToTop();
+    delay(5000);
+simulateScrollToTop();
+    delay(5000);
+    delay(5000);
+    delay(5000);
+                clickNodesByContentDescription("Continue");
+    delay(5000);
+    delay(5000);
+                clickNodesByContentDescription("Continue");
+//                pressEnterKey();
+    delay(5000);
+    delay(5000);
+                clickNodesByContentDescription("Skip");
+
+}
+	}else if (contDesc != "" && contDesc != "Add account") {
+            var agentMap = fetchAgentAccounts(); // Try comma version first, fallback to original
+            // Replace this line:
+// var replacedKey = contDesc.replace(/\./g, ",");
+// With this:
+var replacedKey = replaceAll(contDesc, ".", ",");
+
+            var email = agentMap[replacedKey] || agentMap[contDesc];
+            
+            var serverMap = fetchAgentServer();
+            server = serverMap[replacedKey] || serverMap[contDesc];
+            var keys = Object.keys(agentMap);
+            
+            // Use random class to generate a random index
+            var randomIndex = Math.floor(Math.random() * keys.length);
+            var randomKey = keys[randomIndex];
+            
+            // Return the value associated with the random key
+            var random_account = agentMap[randomKey];
+            var contDescMsg2 = "contDesc = " + contDesc;
+            logWarning("MainActivity", contDescMsg2);
+            speakText(contDescMsg2);
+            
+            var replacedKeyMsg = "replacedKey = " + replacedKey;
+            logWarning("MainActivity", replacedKeyMsg);
+            speakText(replacedKeyMsg);
+            
+            var emailMsg = "email = " + email;
+            logWarning("MainActivity", emailMsg);
+            speakText(emailMsg);
+            
+            var serverMapMsg = "servermap = " + serverMap;
+            logWarning("MainActivity", serverMapMsg);
+            speakText("Server map loaded");
+            
+            var serverMsg = "server = " + server;
+            logWarning("MainActivity", serverMsg);
+            speakText(serverMsg);
+            
+            // Block names that are too generic or contain spaces
+            var blockedNames = ["Create", "Email", "Facebook", "Flash", "More", "SMS", "Timer", "X","SMS", "Instagram", "Facebook", "Twitter", "Shorts", "LinkedIn"];
+            
+if (!contains(contDesc, ' ') && blockedNames.indexOf(contDesc) == -1) {
+    checkAgentAccounts(replaceAll(contDesc, ".", ","));
+}
+            checkAndRecoverFromStuckScreens();
+            
+            if (email != null && server != null) {
+                simulateClick(116, 250);
+                var fetchVideoMsg = "Fetching video for TikTok account " + email;
+                speakText(fetchVideoMsg);
+                var videoResult = fetchTodaysVideoSync(email, server);
+                var key = videoResult[0];
+                var video = videoResult[1];
+                var videoMsg = "video = " + video;
+                logWarning("MainActivity", videoMsg);
+                speakText("Video found");
+                delay(5000);
+                
+                // Edit Profile (Bio + Profile Image), if needed
+                
+                // Update the profile
+                clickNodesByContentDescription("Profile");
+                delay(5000);
+                clickNodesByContentDescription("Edit");
+                clickNodesByContentDescription("Edit profile");
+                clickNodesByContentDescription("Edit Profile");
+                delay(5000);
+                clickNodesByContentDescription("Bio,");
+                delay(5000);
+                clickNodesByContentDescription("Add a bio");
+                delay(5000);
+		clickBioButtonExtended();
+                clickNodesByContentDescription("Bio");
+                delay(5000);
+                var bioMsg = "Fetching bio for " + email;
+                speakText(bioMsg);
+                var bio = fetchBio(email, server);
+                delay(5000);
+                // Example: in your account processing routine
+                var profileMsg = "Downloading profile image for " + email;
+                speakText(profileMsg);
+                var profileResult = downloadProfileImage(email, server);
+
+                if (profileResult != null) {
+    profile = profileResult; // Now it's the file path
+    var profileMsg = "Profile image saved at: " + profile;
+    speakText(profileMsg);
+} else {
+    profile = "";
+    speakText("Failed to download profile image for " + email);
+}
+
+                var bioFoundMsg = "bio = " + bio;
+                logWarning("MainActivity", bioFoundMsg);
+                speakText("Bio loaded");
+                
+                delay(5000);
+                simulateDeleteByClass("android.widget.EditText");
+                delay(5000);
+                var bioText = bio.length > 80 ? bio.substring(0, 80) : bio;
+                simulateTypeByClass("android.widget.EditText", bioText);
+                delay(5000);
+                speakText("Bio Added");
+                
+                clickNodesByContentDescription("Save");
+                delay(5000);
+                clickNodesByContentDescription("Cancel");
+                delay(15000);
+//profile photo update section
+                if (profileResult != null) {
+//                clickNodesByContentDescription("Change photo");
+                clickNodesByContentDescription("Edit photo or avatar");
+                delay(5000); // Select from Gallery
+                clickNodesByContentDescription("Upload photo");
+                delay(5000); // Select from Gallery
+                checkAndRecoverFromStuckScreens();
+                
+                simulateClick(516, 250);
+                delay(5000);
+                clickNodesByContentDescription("Next");
+                delay(5000);
+  //              simulateClick(645, 1480);
+                delay(5000);
+                clickNodesByContentDescription("Next (1)");
+                delay(5000);
+   //             clickNodesByContentDescription("Save ");
+                clickNodesByContentDescription("Save & post");
+                delay(5000);
+//                simulateClick(360, 1440);
+                clickNodesByContentDescription("Cancel");
+
+}
+
+
+                delay(5000);
+                simulateClick(50, 140);
+//                delay(5000);
+ //               simulateClick(50, 140);
+                
+                // Save the current time as the last update time
+                
+                // Log the update
+                var updateMsg = "Profile updated for " + email + " at " + new Date().toISOString();
+                logInfo("ProfileUpdate", updateMsg);
+                speakText("Daily profile update completed");
+                
+                checkAndRecoverFromStuckScreens();
+                
+                if (video != null && video.filename != null && video.filename != "") {
+                    var downloadMsg = "Downloading TikTok video " + video.filename;
+                    speakText(downloadMsg);
+                    var localFile = downloadVideo(video.video_url || "", video.filename);
+                    if (localFile != null) {
+                        // -- Post to TikTok
+                        var caption = video.caption || "";
+                        var uploadMsg = "Uploading to TikTok: " + caption;
+                        speakText(uploadMsg);
+                        if (random_account != null) {
+                            doFullUploadSequence(caption, email, random_account, server);
+                        }
+                        takeScreenshotAndUploadToLogs(email, "Tiktok: " + caption, server);
+
+                        clickNodesByContentDescription("Cancel");
+                        delay(5000);
+                        
+                        clickNodesByContentDescription("Don't allow");
+                        delay(5000);
+                        
+                        var completeMsg = "Completed one full upload sequence (TikTok).";
+                        logWarning("MainActivity", completeMsg);
+                        speakText(completeMsg);
+                        
+                        
+                        
+                        // -- Then Instagram
+                        speakText("Launching Instagram");
+                        launchInstagram();
+                        delay(500);
+clickElementByViewId("com.instagram.android:id/creation_tab")  
+
+                        delay(5000);
+                        delay(5000);
+                        simulateClick(143, 620);
+                        delay(5000);
+                        clickNodesByContentDescription("Next");
+                        delay(5000);
+                        simulateClick(632, 425);
+                        delay(5000);
+                        clickNodesByContentDescription("Next");
+                        delay(5000);
+                        speakText("Taking Instagram screenshot and typing caption");
+                        simulateType("com.instagram.android:id/caption_input_text_view", video.caption || "");
+                        delay(5000);
+                        clickNodesByContentDescription("Share");
+                        delay(5000);
+                        
+                        // -- Then Medium
+                        speakText("Launching Medium");
+                        launchMedium();
+                        delay(5000);
+ //                       simulateClick(100, 1450);
+                        delay(5000);
+clickElementByViewId("com.medium.reader:id/new_story_button")  
+
+//                      simulateClick(650, 1350);
+                        speakText("Fetching blog post");
+var emailPrefix = split(email, "@")[0];
+
+                        var blogPost = fetchBlogPost(video.caption || "Blog", emailPrefix);
+                        speakText("Typing blog post");
+                        simulateType("com.medium.reader:id/common_edit_post_paragraph_text", blogPost);
+                        delay(5000);
+                        takeScreenshotAndUploadToLogs(email, "Medium: " + blogPost, server);
+                        delay(5000);
+                        clickNodesByContentDescription("Preview");
+                        delay(5000);
+                        simulateClick(575, 130);
+                        delay(5000);
+                        clickNodesByContentDescription("Publish now");
+                        delay(5000);
+                        simulateClick(360, 1440);
+                        delay(10000);
+                        checkAndRecoverFromStuckScreens();
+                        
+
+
+                        // DELETE the local video file after all postings:
+                        // Note: In JavaScript, we can't directly call delete() on the file object
+                        // This would need to be handled by the Android wrapper
+                        if (localFile && localFile.delete) {
+                            localFile.delete();
+                        }
+                        speakText("Deleted local video file after all social media posts");
+                        
+                    } else {
+                        var failedMsg = "Failed to download video for " + email;
+                        logWarning("MainActivity", failedMsg);
+                        speakText(failedMsg);
+                    }
+                    var markMsg = "Marking video as posted for " + email;
+                    speakText(markMsg);
+		var replacedemail = replaceAll(email, ".", ",");
+
+                    markVideoAsPosted(replacedemail, key);
+                } else {
+                    var noVideoMsg = "No unposted video or missing filename for " + email;
+                    logWarning("MainActivity", noVideoMsg);
+                    speakText(noVideoMsg);
+                }
+            } else {
+                var noEmailMsg = "No mapped email for username: " + contDesc;
+                logWarning("MainActivity", noEmailMsg);
+                speakText(noEmailMsg);
+            }
+            delay(5000);
+            simulateClick(660, 1450);
+            delay(5000);
+        }
+    }
+}
