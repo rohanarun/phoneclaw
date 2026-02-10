@@ -68,6 +68,3 @@ const otp = magicScraper("The 2FA code shown in the SMS notification")
 # local.properties (project root) OR ~/.gradle/gradle.properties
 MOONDREAM_AUTH=YOUR_TOKEN_HERE
 ```
-
-**Security**
-- Do not commit API keys or service credentials. Use `local.properties` or your global Gradle properties for secrets.
