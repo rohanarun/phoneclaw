@@ -40,12 +40,12 @@ ClawScript runs inside PhoneClaw using an embedded JS engine and exposes helper 
 - `sendAgentEmail(to, subject, message)` — Sends an email from the device for notifications or handoffs.
 - `safeInt(value, defaultVal)` — Safely parses values to integers with a fallback.
 
-**magicClicker(description)**
+**magicClicker**
 - Uses a screenshot plus vision to locate a target described in plain language.
 - Taps the best-matching UI element through the Accessibility service.
 - Best for repeatable flows where the UI layout may shift between devices.
 
-**magicScraper(description)**
+**magicScraper**
 - Uses a screenshot plus vision to answer a targeted question about what is visible.
 - Returns a concise string that you can parse or branch on in your script.
 - Best for reading text like OTP codes, status labels, or field values.
