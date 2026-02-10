@@ -70,5 +70,4 @@ const otp = magicScraper("The 2FA code shown in the SMS notification")
 MOONDREAM_AUTH=YOUR_TOKEN_HERE
 ```
 
-If you are non-technical and need help installing, please "star" this repo and email rohan@cheatlayer.com and I can help you when I have free time. 
 
