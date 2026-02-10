@@ -1,7 +1,11 @@
 **PhoneClaw**
 PhoneClaw is an Android automation app that runs on-device workflows and lets you generate automation logic at runtime using **ClawScript**, a JavaScript-based scripting language built into the app.
 
+PhoneClaw is inspired by Claude Bot/Claude Code and attempts to rebuild the agent loop for android phones natively to act as your personal assistant with access to all your apps. 
 **Demos**
+Automating Creating Instagram Accounts:
+
+[![Demo Video](https://img.youtube.com/vi/nB6yp3WRpt4/0.jpg)](https://www.youtube.com/watch?v=nB6yp3WRpt4)
 
 
 **ClawScript**
