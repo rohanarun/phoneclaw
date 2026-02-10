@@ -13,6 +13,10 @@ Automating Creating Instagram Accounts:
 
 [![Automating Creating Instagram Accounts](https://img.youtube.com/vi/nB6yp3WRpt4/0.jpg)](https://www.youtube.com/watch?v=nB6yp3WRpt4)
 
+Automating Captchas:
+
+[![Automating Captchas:](https://img.youtube.com/vi/aBgbr27fR5M/0.jpg)](https://www.youtube.com/watch?v=aBgbr27fR5M)
+
 
 **ClawScript**
 ClawScript is a JS scripting language that runs inside PhoneClaw and allows generating automations at runtime on Android. You can chain UI actions, scrape on-screen data, and build flexible flows without hardcoding coordinates.
