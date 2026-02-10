@@ -10,8 +10,7 @@ Automating Uploading Videos To Tiktok With Songs:
 
 
 Automating Creating Instagram Accounts:
-
-[![Automating Creating Instagram Accounts](https://img.youtube.com/vi/nB6yp3WRpt4/0.jpg)](https://www.youtube.com/watch?v=nB6yp3WRpt4)
+[![Automating Creating Instagram Accounts](https://img.youtube.com/vi/9zR43vLYCMs/0.jpg)](https://www.youtube.com/watch?v=9zR43vLYCMs)
 
 Automating Captchas:
 
