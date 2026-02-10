@@ -2,10 +2,7 @@
 PhoneClaw is an Android automation app that runs on-device workflows and lets you generate automation logic at runtime using **ClawScript**, a JavaScript-based scripting language built into the app.
 
 **Demos**
-- [Creating Instagram Accounts](https://example.com/demo-instagram-create) (replace with your video link)
-- [Posting Videos](https://example.com/demo-instagram-post) (replace with your video link)
-- [Automated 2FA](https://example.com/demo-2fa) (replace with your video link)
-- [ClawScript Automation Overview](https://example.com/demo-clawscript) (replace with your video link)
+
 
 **ClawScript**
 ClawScript is a JS scripting language that runs inside PhoneClaw and allows generating automations at runtime on Android. You can chain UI actions, scrape on-screen data, and build flexible flows without hardcoding coordinates.
