@@ -94,7 +94,7 @@ Discord: https://discord.gg/n9nbZUrw
 
 Youtube: https://www.youtube.com/@getsuperpowers
 
-Twitter: https://x.com/i/communities/2025816983716184465
+Twitter: [https://x.com/i/communities/2025816983716184465](https://x.com/i/communities/2026071470741635468)
 
 
 
