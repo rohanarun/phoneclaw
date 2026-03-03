@@ -3,6 +3,10 @@ PhoneClaw is an Android automation app that runs on-device workflows and lets yo
 
 PhoneClaw is inspired by Claude Bot/Claude Code and attempts to rebuild the agent loop for android phones natively to act as your personal assistant with access to all your apps. 
 
+**Docs**
+
+https://rohanarun-phoneclaw.mintlify.app/
+
 **Demos**
 
 Live demo: getsupers.com
