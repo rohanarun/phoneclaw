@@ -20,8 +20,6 @@ Apple Vision Pro demo: https://x.com/Viewforge/status/2028401641549164834
 
 Automate your old Androids: https://youtube.com/live/Thc2sAt8uuk 
 
-9% or 90M tokens locked:  https://app.streamflow.finance/token-dashboard/solana/mainnet/B4xht9gaypZthqtHvCnt1TWUwdxvV8jDKajgrHxPpump 
-
 Automated locking agent: https://x.com/Viewforge/status/2028591471860097289 
 
 Automated X Community Mod Agent: https://x.com/Viewforge/status/2028115961711415657 
