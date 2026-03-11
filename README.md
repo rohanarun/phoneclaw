@@ -26,7 +26,7 @@ Automated locking agent: https://x.com/Viewforge/status/2028591471860097289
 
 Automated X Community Mod Agent: https://x.com/Viewforge/status/2028115961711415657 
 
-$phoneclaw integrated into our app: https://x.com/Viewforge/status/2026482468430426558     
+$phoneclaw(Solana token) integrated into our app: https://x.com/Viewforge/status/2026482468430426558     
 
 
 Automating Twitter In A Waymo With Android XR
