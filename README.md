@@ -11,6 +11,8 @@ https://rohanarun-phoneclaw.mintlify.app/
 
 Live demo: getsupers.com
 
+IOS app: https://apps.apple.com/us/app/superpowers-ai/id6758969961
+
 Automating Twitter In A Waymo With Android XR
 
 [![Automating Twitter In A Waymo:](https://img.youtube.com/vi/_F5Wfbragh8/0.jpg)](https://www.youtube.com/watch?v=_F5Wfbragh8)
