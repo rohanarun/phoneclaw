@@ -23,6 +23,10 @@ Automated X Community Mod Agent: https://x.com/Viewforge/status/2028115961711415
 
 $phoneclaw(Solana token) integrated into our app: https://x.com/Viewforge/status/2026482468430426558     
 
+Flying Drones with AI:
+
+[![Flying Drones with AI:](https://img.youtube.com/vi/SWb7RLR1lD0/0.jpg)](https://www.youtube.com/watch?v=SWb7RLR1lD0)
+
 
 Automating Twitter In A Waymo With Android XR
 
