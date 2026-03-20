@@ -9,7 +9,7 @@ https://rohanarun-phoneclaw.mintlify.app/
 
 **Demos**
 
-Live demo: getsupers.com
+Live demo: https://getsupers.com
 
 iOS App: https://apps.apple.com/us/app/superpowers-ai/id6758969961   
 
