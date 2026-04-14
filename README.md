@@ -12,6 +12,7 @@ superpowers --help
 Open the URL it gives you to control the stream. 
 
 **Native Clients**
+
 iPhone: https://apps.apple.com/us/app/superpowers-ai/id6758969961
 
 Android: https://bit.ly/4vvTZhI
