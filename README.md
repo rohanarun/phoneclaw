@@ -11,18 +11,6 @@ superpowers --help
 
 Open the URL it gives you to control the stream. 
 
-**Native Clients**
-
-iPhone: https://apps.apple.com/us/app/superpowers-ai/id6758969961
-
-Android: https://bit.ly/4vvTZhI
-
-Mac: https://bit.ly/4t7LJTa
-
-Windows: https://bit.ly/4vFs8f0
-
-Linux: https://bit.ly/41sKqCo
-
 npm package: https://npmjs.com/package/superpowers-ai
 
 Chrome Extension: https://chromewebstore.google.com/detail/superpowers-ai/oolmdenpaebkcokkccakmlmhcpnogalc
