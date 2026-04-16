@@ -23,6 +23,8 @@ https://rohanarun-phoneclaw.mintlify.app/
 
 **Demos**
 
+World's first software-only iPhone Automation: https://www.youtube.com/watch?v=QT67RvAt69o
+
 Live demo: https://getsupers.com
 
 iOS App: https://apps.apple.com/us/app/superpowers-ai/id6758969961   
