@@ -1,12 +1,3 @@
-## Star History
-
-<a href="https://www.star-history.com/?repos=rohanarun%2Fphoneclaw&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&legend=top-left" />
- </picture>
-</a>
 
 **PhoneClaw**
 PhoneClaw is an Android automation app that runs on-device workflows and lets you generate automation logic at runtime using **ClawScript**, a JavaScript-based scripting language built into the app.
@@ -144,4 +135,13 @@ Youtube: https://www.youtube.com/@getsuperpowers
 Twitter: [https://x.com/i/communities/2025816983716184465](https://x.com/i/communities/2026071470741635468)
 
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=rohanarun%2Fphoneclaw&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rohanarun/phoneclaw&type=date&legend=top-left" />
+ </picture>
+</a>
 
