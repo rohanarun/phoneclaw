@@ -128,7 +128,7 @@ MOONDREAM_AUTH=YOUR_TOKEN_HERE
 
 **Community**
 
-Discord: https://discord.gg/n9nbZUrw
+Discord: https://discord.gg/supers
 
 Youtube: https://www.youtube.com/@getsuperpowers
 
